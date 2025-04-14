@@ -1,0 +1,52 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Relatórios API",
+    "description": "Documentação da API de relatórios",
+    "version": "1.0.0"
+  },
+  "basePath": "/",
+  "schemes": ["http"],
+  "paths": {
+    "/relatorios/status": {
+      "get": {
+        "summary": "Relatório de status dos espaços",
+        "responses": {
+          "200": {
+            "description": "Retorna total, disponíveis e ocupados"
+          }
+        }
+      }
+    },
+    "/relatorios/lojas": {
+      "get": {
+        "summary": "Relatório por loja",
+        "responses": {
+          "200": {
+            "description": "Retorna o total de espaços por loja"
+          }
+        }
+      }
+    },
+    "/relatorios/marcas": {
+      "get": {
+        "summary": "Relatório por marca",
+        "responses": {
+          "200": {
+            "description": "Retorna o total de espaços por marca"
+          }
+        }
+      }
+    },
+    "/relatorios/geral": {
+      "get": {
+        "summary": "Relatório geral com todos os dados",
+        "responses": {
+          "200": {
+            "description": "Retorna dados agregados por status, loja e marca"
+          }
+        }
+      }
+    }
+  }
+}
